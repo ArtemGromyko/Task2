@@ -28,7 +28,7 @@ namespace Task2
 
             Student s3;
             s2.CopyObj(out s3);
-            s3.ShowInfo();
+            s3.ShowField(5);
         }
     }
 }

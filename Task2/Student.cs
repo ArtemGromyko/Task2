@@ -117,5 +117,30 @@ namespace Task2
             else
                 Console.WriteLine("NumberOfSubjects = 0");
         }
+        public void ShowField(int choice)
+        {
+            switch (choice)
+            {
+                case 0:
+                    Console.WriteLine("name: "+Name);
+                    break;
+                case 1:
+                    Console.WriteLine("age: "+Age);
+                    break;
+                case 2:
+                    Console.WriteLine("NumberOfSubject: "+NumberOfSubjects);
+                    break;
+                case 3:
+                    for(int i=0; i < NumberOfSubjects; i++)
+                    {
+                        Console.WriteLine("marks[{0}].Value = {1}", i, marks[i].Value);
+                        Console.WriteLine("marks[{0}].Subject = {1}", i, marks[i].Subject);
+                    }
+                    break;
+                default:
+                    Console.WriteLine("parameter \"choice\" is incorrect");
+                    break;
+            }
+        }
     }
 }
